@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #050722;
+    color: #fff;
+    position: relative;
+}
+header{
+    width: 100%;
+    padding: 10px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.logo::first-letter{
+    color: #297cf0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    color: #297cf0;
+}
+nav {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 12%;
+}
+.right img {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    max-width: 500px;
+}
+
+.right img:hover {
+    transform: scale(0.98);
+}
+
+.circle {
+    background-color: #297cf0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    z-index: -1;
+}
+.left{
+    width: 450px;
+}
+.left h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.left h2::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background-color: #297cf0;
+    width: 50%;
+    height: 2px;
+}
+
+.left h3 {
+    color: #297cf0;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    display: grid;
+    gap: 20px;
+    width: 80px;
+    text-align: center;
+}
+
+.cta .btn-hire {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+    margin-right: 20px;
+    border: 2px solid #297cf0;
+    color: #050722;
+    background-color: #297cf0;
+    width: 200%;
+}
+.btn-hire:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #050722;
+}
+.cta .btn-talk {
+    border: 2px solid #297cf0;
+    color: #297cf0;
+    background-color: #050722;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+    width: 200%;
+}
+
+.btn-talk:hover{
+    color: #050722;
+    background-color: #297cf0;
+    border: 2px solid #050722;
+}
+div.social {
+    position: absolute;
+    bottom: 130px;
+    left: 13%;
+    text-align: center;
+}
+
+.social i {
+    font-size: 22px;
+    color: #297cf0;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* background-color: #fff; */
+    border: 2px solid #297cf0;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+.social i:hover{
+    transform: rotate(50%);
+    color: #050722;
+    background-color: #297cf0;
+}
+
+.footer__copy{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 167px;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+    background-color: red;
+}
+
+.footer__copy i{
+    font-size: 20px;
+    color: green;
+    margin-left: 5px;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer__copy i:hover{
+    /* transform: rotateY(360%); */
+    transform: scale(0.98);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        margin: auto;
+        width: 100%;
+        height: 100px;
+    }
+
+    .section {
+        display: block;
+        height: 200px;
+    }
+    .right {
+        margin-top: 300px;
+    }
+    .right img{
+        margin-top: -70px;
+        width: 50%;
+    }
+
+    .circle{
+        margin-top: -70px;
+        left: 70px;
+        width: 355px;
+        height: 355px;
+        border-radius: 50%;
+    }
+    .left {
+        /* margin-top: 320px auto; */
+        justify-content: center;
+        align-items: center;
+        margin: 320px auto 0px  auto;
+        width: 80%;
+    }
+    .social {
+        margin-bottom: 330px;
+        align-items: center;
+        margin-left: 13%;
+    }
+    .footer__copy{
+        width: 100%;
+        height: 30px;
+        margin-bottom: -400px;
+        margin-top: 100px;
+        font-size: 10.5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
